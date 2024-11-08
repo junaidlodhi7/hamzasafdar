@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "program": "${workspaceFolder}/dist/index.js", // Path to the compiled JS file
+        "preLaunchTask": "tsc: build - tsconfig.json", // Compile TypeScript before running
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"], // Output directory for compiled files
+        "console": "integratedTerminal" // Use the integrated terminal
+      }
+    ]
+  }
+  
